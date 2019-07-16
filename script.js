@@ -78,7 +78,7 @@ function decimalButton(x){
     if (operatorButtonClicked === 1 && num2 == ""){
         num2 = "0" + x;
 		displayValue.innerHTML = "0" + x;
-    }else {
+    }else if (operatorButtonClicked === 1 && !num2.includes(x)){
         num2 += x;
 		displayValue.innerHTML = num2;
     }
@@ -107,9 +107,8 @@ function equalButton(){
 	}else if (operator === '+'){
 		answer = value1 + value2;
 		displayValue.innerHTML = answer;
-	}
-
-    displayValue.innerHTML = answer;
+    }
+    
     num1 = answer;
     num2 = "";
 }
