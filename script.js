@@ -54,7 +54,7 @@ function numberButton(x){
 //OPERATOR BUTTONS
 function operatorButton(x){
     if (x === '/'){
-        operator = '/'
+        operator = '/';
     }else if (x === '*'){
         operator = '*';
     }else if (x === '-'){
@@ -62,10 +62,16 @@ function operatorButton(x){
     }else if (x === '+'){
         operator = '+';
     }
+    
+    //still needs tweaking --- Purpose: to update the display with the answer to the previous operation when operator button is clicked like it does on the iphone calculator --- Currently: only works with same operations (ie. add, substract, etc.), for other operations it performs the most recent operation instead of showing the result of the previous one. ex : "2 + 3 -" should show "5" so "5 - ?" would be the next operation, but currently shows "2 + 3 -" as "-1"
     operatorButtonClicked = 1;
+    if (!num2 == ""){
+        equalButton();
+    }
+
 }
 
-//DECIMAL BUTTON ---- *need to fix*
+//DECIMAL BUTTON
 function decimalButton(x){
     if (!displayValue.innerHTML.includes(x) && num1 == ""){
         num1 = "0" + x;
@@ -96,7 +102,7 @@ function equalButton(){
     // console.log(value2);
 
     if (operator === '/'){
-		answer = value1 / value2;
+        answer = value1 / value2;
 		displayValue.innerHTML = answer;
 	}else if (operator === '*'){
 		answer = value1 * value2;
