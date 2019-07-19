@@ -9,36 +9,36 @@
 </head>
 <body>
     <div class="container">
-        <div id="display-container">0</div>
+        <div id="display-container"><span id="display-bottom">0</span></div>
         <div id="buttons-container">
             <div class="button-row">
-                <button onclick="functionButton(1)">AC</button>
-                <button onclick="functionButton(2)">+/-</button>
-                <button onclick="functionButton(3)">&percnt;</button>
-                <button onclick="operatorButton('/')">&divide;</button>
+                <button onclick="functionButton(1)" id="ac" class="function">AC</button>
+                <button onclick="functionButton(2)" id="plusminus" class="function">+/-</button>
+                <button onclick="functionButton(3)" id="percent" class="function">&percnt;</button>
+                <button onclick="operatorButton('/')" id="divide" class="operator">&divide;</button>
             </div>
             <div class="button-row">
-                <button onclick="numberButton(7)">7</button>
-                <button onclick="numberButton(8)">8</button>
-                <button onclick="numberButton(9)">9</button>
-                <button onclick="operatorButton('*')">&times;</button>
+                <button onclick="numberButton(7)" id="seven" class="number">7</button>
+                <button onclick="numberButton(8)" id="eight" class="number">8</button>
+                <button onclick="numberButton(9)" id="nine" class="number">9</button>
+                <button onclick="operatorButton('*')" id="multiply" class="operator">&times;</button>
             </div>
             <div class="button-row">
-                <button onclick="numberButton(4)">4</button>
-                <button onclick="numberButton(5)">5</button>
-                <button onclick="numberButton(6)">6</button>
-                <button onclick="operatorButton('-')">&minus;</button>
+                <button onclick="numberButton(4)" id="four" class="number">4</button>
+                <button onclick="numberButton(5)" id="five" class="number">5</button>
+                <button onclick="numberButton(6)" id="six" class="number">6</button>
+                <button onclick="operatorButton('-')" id="minus" class="operator">&minus;</button>
             </div>
             <div class="button-row">
-                <button onclick="numberButton(1)">1</button>
-                <button onclick="numberButton(2)">2</button>
-                <button onclick="numberButton(3)">3</button>
-                <button onclick="operatorButton('+')">&plus;</button>
+                <button onclick="numberButton(1)" id="one" class="number">1</button>
+                <button onclick="numberButton(2)" id="two" class="number">2</button>
+                <button onclick="numberButton(3)" id="three" class="number">3</button>
+                <button onclick="operatorButton('+')" id="plus" class="operator">&plus;</button>
             </div>
             <div class="button-row">
-                <button onclick="numberButton(0)">0</button>
-                <button onclick="decimalButton('.')">.</button>
-                <button onclick="equalButton()">&equals;</button>
+                <button onclick="numberButton(0)" id="zero" class="number">0</button>
+                <button onclick="decimalButton('.')" id="period" class="number">.</button>
+                <button onclick="equalButton()" id="equal" class="operator">&equals;</button>
             </div>
         </div>
     </div>

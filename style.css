@@ -5,16 +5,17 @@
 }
 
 html, body {
-	background: red;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	background: gray;
+	font-family: "Century Gothic", sans-serif; 
 	font-weight: 100;
 }
 .container {
 	background: black;
-	font-size: 60px;
+	font-size: 45px;
 	width: 242px;
 	padding: 10px 15px;
 	margin: 0 auto;
+	border-radius: 25px;
 }
 
 #display-container {

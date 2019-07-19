@@ -1,5 +1,5 @@
 //GLOBAL VARIABLES
-var displayValue = document.getElementById("display-container");
+var displayValue = document.getElementById("display-bottom");
 var num1 = "";
 var num2 = "";
 var operator;
